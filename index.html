@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前端基礎知識線上測驗 (10題)</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .question {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .question p {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin: 8px 0;
+            cursor: pointer;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        #result {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>前端基礎知識線上測驗</h1>
+    <form id="quizForm">
+        <!-- 第 1 題 -->
+        <div class="question">
+            <p>1. HTML 是用來做什麼的？</p>
+            <label><input type="radio" name="q1" value="A"> A. 網頁的樣式與排版</label>
+            <label><input type="radio" name="q1" value="B"> B. 網頁的結構與內容</label>
+            <label><input type="radio" name="q1" value="C"> C. 網頁的互動邏輯</label>
+        </div>
+        <!-- 第 2 題 -->
+        <div class="question">
+            <p>2. CSS 的主要功能是？</p>
+            <label><input type="radio" name="q2" value="A"> A. 控制外觀與樣式</label>
+            <label><input type="radio" name="q2" value="B"> B. 資料庫管理</label>
+            <label><input type="radio" name="q2" value="C"> C. 伺服器架設</label>
+        </div>
+        <!-- 第 3 題 -->
+        <div class="question">
+            <p>3. JavaScript 是一種什麼語言？</p>
+            <label><input type="radio" name="q3" value="A"> A. 標記語言</label>
+            <label><input type="radio" name="q3" value="B"> B. 程式設計語言</label>
+            <label><input type="radio" name="q3" value="C"> C. 風格表語言</label>
+        </div>
+        <!-- 第 4 題 -->
+        <div class="question">
+            <p>4. 以下哪個 HTML 標籤用來建立超連結？</p>
+            <label><input type="radio" name="q4" value="A"> A. &lt;link&gt;</label>
+            <label><input type="radio" name="q4" value="B"> B. &lt;a&gt;</label>
+            <label><input type="radio" name="q4" value="C"> C. &lt;href&gt;</label>
+        </div>
+        <!-- 第 5 題 -->
+        <div class="question">
+            <p>5. 在 CSS 中，要改變文字顏色應該使用哪個屬性？</p>
+            <label><input type="radio" name="q5" value="A"> A. font-color</label>
+            <label><input type="radio" name="q5" value="B"> B. text-style</label>
+            <label><input type="radio" name="q5" value="C"> C. color</label>
+        </div>
+        <!-- 第 6 題 -->
+        <div class="question">
+            <p>6. JavaScript 中用來宣告常數的關鍵字是？</p>
+            <label><input type="radio" name="q6" value="A"> A. let</label>
+            <label><input type="radio" name="q6" value="B"> B. var</label>
+            <label><input type="radio" name="q6" value="C"> C. const</label>
+        </div>
+        <!-- 第 7 題 -->
+        <div class="question">
+            <p>7. GitHub 是基於哪個版本控制系統建立的？</p>
+            <label><input type="radio" name="q7" value="A"> A. Git</label>
+            <label><input type="radio" name="q7" value="B"> B. SVN</label>
+            <label><input type="radio" name="q7" value="C"> C. Mercurial</label>
+        </div>
+        <!-- 第 8 題 -->
+        <div class="question">
+            <p>8. 以下哪個是網頁中常見的圖片格式？</p>
+            <label><input type="radio" name="q8" value="A"> A. .mp4</label>
+            <label><input type="radio" name="q8" value="B"> B. .png</label>
+            <label><input type="radio" name="q8" value="C"> C. .txt</label>
+        </div>
+        <!-- 第 9 題 -->
+        <div class="question">
+            <p>9. 網頁中用來接收使用者輸入的主要表單標籤是？</p>
+            <label><input type="radio" name="q9" value="A"> A. &lt;form&gt;</label>
+            <label><input type="radio" name="q9" value="B"> B. &lt;table&gt;</label>
+            <label><input type="radio" name="q9" value="C"> C. &lt;div&gt;</label>
+        </div>
+        <!-- 第 10 題 -->
+        <div class="question">
+            <p>10. CSS 選擇器中，用來指定 ID 的符號是？</p>
+            <label><input type="radio" name="q10" value="A"> A. . (點)</label>
+            <label><input type="radio" name="q10" value="B"> B. # (井號)</label>
+            <label><input type="radio" name="q10" value="C"> C. @ (小老鼠)</label>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">提交答案</button>
+    </form>
+    <div id="result"></div>
+</div>
+
+<script>
+    function checkAnswers() {
+        const answers = { q1: 'B', q2: 'A', q3: 'B', q4: 'B', q5: 'C', q6: 'C', q7: 'A', q8: 'B', q9: 'A', q10: 'B' };
+        let score = 0;
+        let total = 10;
+
+        for (let key in answers) {
+            let userAns = document.querySelector(`input[name="${key}"]:checked`);
+            if (userAns && userAns.value === answers[key]) {
+                score += 10;
+            }
+        }
+
+        document.getElementById('result').innerText = `您的總分是：${score} 分（滿分 100 分）`;
+    }
+</script>
+
+</body>
+</html>
